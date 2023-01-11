@@ -15,7 +15,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "build": "webpack && cp -r public/* dist",
+    "build": "webpack && cp -r public/* docs",
     "dev": "webpack serve --mode development --open --port 8888"
   }
 }
