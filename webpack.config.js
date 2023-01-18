@@ -16,6 +16,18 @@ module.exports = {
         include: [path.resolve(__dirname, "node_modules/deepar/")],
         type: "asset/resource",
       },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              modules: true,
+            },
+          },
+        ],
+      },
     ],
   },
 };
