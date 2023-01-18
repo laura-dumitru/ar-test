@@ -2,6 +2,7 @@ import { DeepAR } from "deepar";
 import deeparWasm from "deepar/wasm/deepar.wasm";
 import faceTrackingModel from "deepar/models/face/models-68-extreme.bin";
 import segmentationModel from "deepar/models/segmentation/segmentation-160x160-opt.bin";
+import "./styles.css";
 
 const canvas = document.getElementById("deepar-canvas");
 const deepAR = new DeepAR({
