@@ -1,0 +1,24 @@
+body {
+  background-color: #293241;
+  display: inline-block;
+  margin-left: 400px;
+  margin-top: 64px;
+}
+
+button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 18px;
+  border-radius: 50px;
+  background-color: #ee6c4d;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+}
+
+button:hover {
+  background-color: #3d5a80;
+}
