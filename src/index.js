@@ -3,11 +3,12 @@ import deeparWasm from "deepar/wasm/deepar.wasm";
 import faceTrackingModel from "deepar/models/face/models-68-extreme.bin";
 import segmentationModel from "deepar/models/segmentation/segmentation-160x160-opt.bin";
 import "./styles.css";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const canvas = document.getElementById("deepar-canvas");
 const deepAR = new DeepAR({
-  licenseKey:
-    "a9988ad83ca0edffc2dd99a29939a77a44d01eef90ecd89431044f078eabe770e574e24d53226433",
+  licenseKey: process.env.DEEP_AR_KEY,
   canvas: canvas,
   deeparWasmPath: deeparWasm,
   callbacks: {
